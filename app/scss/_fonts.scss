@@ -1,0 +1,85 @@
+
+@font-face{
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Montserrat-Light.woff2') format('woff2'), url('../fonts/Montserrat-Light.woff') format('woff');
+}
+@font-face{
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'Montserrat-Medium';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff');
+}
+@font-face{
+  font-family: 'Montserrat-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?980sei');
+    src:  url('../fonts/icomoon.eot?980sei#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?980sei') format('truetype'),
+      url('../fonts/icomoon.woff?980sei') format('woff'),
+      url('../fonts/icomoon.svg?980sei#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-company1:before {
+    content: "\e900";
+  }
+  .icon-lamp:before {
+    content: "\e901";
+  }
+  .icon-main:before {
+    content: "\e902";
+  }
+  .icon-projects:before {
+    content: "\e904";
+  }
+  .icon-resheniya:before {
+    content: "\e905";
+  }
+  .icon-map-pin:before {
+    content: "\e906";
+  }
