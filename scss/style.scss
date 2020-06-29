@@ -64,6 +64,8 @@ button{
 .header{
     background-color: #EBEEF5;
 }
+
+
 .header__inner{
     display: flex;
     justify-content: space-between;
@@ -88,7 +90,7 @@ button{
         transition: all .3s;
         padding-top: 36px;
         padding-bottom: 37px;
-        font-family: 'Montserrat', sans-serif;
+        @extend %montserrat-400;
         &:hover{
             color: #397DFF;
             position: relative;
@@ -105,6 +107,9 @@ button{
             }
         }
     }
+}
+.header__contact{
+    width: 135px;
 }
 .header__mail,
 .header__phone{
@@ -209,6 +214,7 @@ button{
 //menu-btn end
 
 //section slider start
+
 .items{
     position: relative;
 }
@@ -323,7 +329,6 @@ button{
 
 .product{
     display: flex;
-    padding-top: 166px;
 }
 .product__img{
     display: flex;
@@ -596,7 +601,6 @@ button{
 .success-btn{
     margin-top: 32px;
 }
-
 
 
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content{
