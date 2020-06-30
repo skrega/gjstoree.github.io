@@ -21,7 +21,8 @@
   },
   "dependencies": {
     "jquery-form-styler": "^2.0.2",
+    "jquery.maskedinput": "^1.4.1",
     "magnific-popup": "^1.1.0",
-    "slick-carousel": "^1.8.1",
+    "slick-carousel": "^1.8.1"
   }
 }

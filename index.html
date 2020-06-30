@@ -13,7 +13,7 @@
     <div class="container">
       <div class="header__inner">
           <a href="#" class="header__logo">
-            <img src="images/logo.png" alt="">
+            <img src="images/logo.svg" alt="">
           </a>
           <nav class="menu">
             <ul class="menu__list">
@@ -109,31 +109,27 @@
     <div class="product__img">
         <img src="images/music-column.png" alt="">
     </div>
-    <div class="project__example" style="background-image: url(images/img.jpg);">
-      <div class="column-img">
-        <div class="music-column">
-          <img src="images/column-left.png" alt="" class="column">
-        </div>
-        <div class="music-column">
-          <img src="images/column-right.png" alt="" class="column">
-        </div>
-        <button class="project__btn"></button>
-        <div class="product__info" id="product__info">
-          <div class="product__info-top">
-            <div class="product__info-title">
-                Electro-Voice EVID 4.2
+      <div class="columns-img" style="background-image: url(images/example.jpg);">
+          <div class="product__wrapper">
+            <div class="product-circle"></div>
+            <button class="project__btn"></button>
+              <div class="product__info" id="product__info">
+            <div class="product__info-top">
+              <div class="product__info-title">
+                  Electro-Voice EVID 4.2
+              </div>
+              <div class="product__info-icon">
+                <img src="images/speaker.svg" alt="">
+              </div>
             </div>
-            <div class="product__info-icon">
-              <img src="images/speaker.png" alt="">
-            </div>
+            <ul class="product__info-list">
+              <li>Очень мягкое звучание.</li>
+              <li>Чувствительность 	— 89 дБ.</li>
+              <li>Пиковая мощность 	— 400 Вт.</li>
+              <li>Степень влагозащищенности IP34.</li>
+            </ul>
+            <img class="close-icon" src="images/close_icon.svg" alt="">
           </div>
-          <ul class="product__info-list">
-            <li>Очень мягкое звучание.</li>
-            <li>Чувствительность 	— 89 дБ.</li>
-            <li>Пиковая мощность 	— 400 Вт.</li>
-            <li>Степень влагозащищенности IP34.</li>
-          </ul>
-          <img class="close-icon" src="images/close_icon.svg" alt="">
         </div>
       </div>
     </div>
@@ -148,11 +144,23 @@
       </div>
       <form>
         <input class="input-callback" type="text" placeholder="Имя*" required> 
-        <input class="input-callback" type="tel" placeholder="Телефон*" required>
+        <input id="phone" class="input-callback" type="tel" placeholder="Телефон*" required>
         <input type="checkbox" id="callback-checkbox" required>
-        <label for="callback-checkbox">Я согласен с условиями обработки <span>персональных данных</span></label> 
+        <label for="callback-checkbox">Я согласен с условиями обработки <a href="#">персональных данных</a></label> 
         <button type="submit" class="popup-btn button form-popup">Отправить</button>
       </form>
+    </div>
+  </div>
+  <div id="success" class="pop-up mfp-hide">
+    <div class="success__inner">
+      <div class="success__img"></div>
+      <div class="success__text">
+        Ваша заявка успешно отправлена.
+      </div>
+      <div class="success__text">
+        Ожидайте звонка в ближайшее время!
+      </div> 
+      <button type="submit" class="popup-btn success-btn button">Ок</button>
     </div>
   </div>
 

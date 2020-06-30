@@ -1,37 +1,6 @@
 $(function(){
 
-//header animation start
-
-
-$(window).scroll(function() {    
-  var scroll = $(window).scrollTop();
-
-  if (scroll >= 50) {
-      $(".header").addClass("fixed");
-  } else {
-      $(".header").removeClass("fixed");
-  }
-});
-
-
-// var header = $('.header'),
-// 		scrollPrev = 0;
-
-// $(window).scroll(function() {
-// 	var scrolled = $(window).scrollTop();
- 
-// 	if ( scrolled > 10 && scrolled > scrollPrev ) {
-// 		header.addClass('out');
-// 	} else {
-// 		header.removeClass('out');
-// 	}
-// 	scrollPrev = scrolled;
-// });
-
-
-//header animation end
 //menu btn start
-
     $('.menu-wrapper').on('click', function() {
         $('.hamburger-menu').toggleClass('animate');
         $('.menu__list').toggleClass('show');
@@ -102,15 +71,27 @@ $(window).scroll(function() {
       midClick: true ,
       closeBtnInside: true
     });
-    $('.form-popup').magnificPopup({
-      items: {
-          src: '<div id="success" class="pop-up"><div class="success__inner"><div class="success__img"></div><div class="success__text">Ваша заявка успешно отправлена.</div> <div class="success__text">Ожидайте звонка в ближайшее время!</div> <button type="submit" class="popup-btn success-btn button">Ок</button></div></div>',
-          type: 'inline'
-      },
-      closeBtnInside: true
+   
+    $('form').submit(function(e) {
+      $.magnificPopup.open({
+        items: {
+            src: '#success', 
+        },
+        type: 'inline'
+      });
+      e.preventDefault();
     });
 
+    $('.success-btn').click(function() {
+      $.magnificPopup.close();
+  });
 //magnificPopup end
+
+//maskedinput start 
+
+  $("#phone").mask("+ 7 (999) 999-99-99");
+  
+//maskedinput end
 
 //jquery form styler start
 
@@ -118,6 +99,7 @@ $(window).scroll(function() {
 
 //jquery form styler end
 
+  
    
 });
 

@@ -51,6 +51,7 @@ gulp.task('js', function(){
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
+    'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
