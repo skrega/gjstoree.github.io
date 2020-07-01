@@ -71,20 +71,36 @@ $(function(){
       midClick: true ,
       closeBtnInside: true
     });
-   
-    $('form').submit(function(e) {
-      $.magnificPopup.open({
-        items: {
-            src: '#success', 
-        },
-        type: 'inline'
+    
+  //!!!!!!!!!!!!!!!!!!!
+    $("form").submit(function() { 
+      var th = $(this);
+      $.ajax({
+        type: "POST",
+        url: "mail.php", 
+        data: th.serialize()
+      }).done(function() {
+        alert("Thank you!");
+        setTimeout(function() {
+          th.trigger("reset");
+        }, 1000);
       });
-      e.preventDefault();
+      return false;
     });
+  //!!!!!!!!!!!!!!!!!!!!!
+  //   $('form').submit(function(e) {
+  //     $.magnificPopup.open({
+  //       items: {
+  //           src: '#success', 
+  //       },
+  //       type: 'inline'
+  //     });
+  //     e.preventDefault();
+  //   });
 
-    $('.success-btn').click(function() {
-      $.magnificPopup.close();
-  });
+  //   $('.success-btn').click(function() {
+  //     $.magnificPopup.close();
+  // });
 //magnificPopup end
 
 //maskedinput start 

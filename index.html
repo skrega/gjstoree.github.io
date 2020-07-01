@@ -46,7 +46,9 @@
   <section class="slider">
     <div class="items">
       <div class="item-box">
-        <div class="item" style="background-image: url(images/slider-item.jpg)">
+        <div class="item" style="background-image: url(images/slider-item.jpg),
+        url(images/slider-item.webp),
+        url(images/slider-item.jp2);">
             <div class="container"> 
                 <div class="item__inner">
                     <div class="item__suptext">
@@ -65,7 +67,9 @@
                 </div>
             </div>
         </div>
-        <div class="item" style="background-image: url(images/slider-item.jpg)">
+        <div class="item" style="background-image: url(images/slider-item.jpg),
+        url(images/slider-item.webp),
+        url(images/slider-item.jp2);">
           <div class="container"> 
               <div class="item__inner">
                   <div class="item__suptext">
@@ -142,10 +146,16 @@
       <div class="callback__text">
         Заполните форму ниже и мы свяжемся с вами.
       </div>
-      <form>
-        <input class="input-callback" type="text" placeholder="Имя*" required> 
-        <input id="phone" class="input-callback" type="tel" placeholder="Телефон*" required>
-        <input type="checkbox" id="callback-checkbox" required>
+      <form >
+
+        <input type="hidden" name="project_name" value="DJSTORE">
+        <input type="hidden" name="admin_email" value="andrievichregina@gmail.com"> 
+        <input type="hidden" name="form_subject" value="Form">
+
+
+        <input name="Имя" class="input-callback" type="text" placeholder="Имя*" required> 
+        <input name="Телефон" id="phone" class="input-callback" type="tel" placeholder="Телефон*" required>
+        <input name="Согласие" type="checkbox" id="callback-checkbox" required>
         <label for="callback-checkbox">Я согласен с условиями обработки <a href="#">персональных данных</a></label> 
         <button type="submit" class="popup-btn button form-popup">Отправить</button>
       </form>
